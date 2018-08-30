@@ -1,14 +1,14 @@
 [
   {
-    "type": "container",
-    "title": "Registry",
-    "description": "Docker image registry",
-    "categories": ["docker"],
+    "type": "stack",
+    "title": "WordPress Advanced",
+    "description": "WordPress install with advanced functionality",
+    "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://portainer.io/images/logos/registry.png",
-    "image": "registry:latest",
+    "image": "wordpress:latest",
     "ports": [
-      "5000/tcp"
+      "80/tcp"
     ],
-    "volumes": ["/var/lib/registry"]
+    "volumes": ["wordpress_data"]
   },
